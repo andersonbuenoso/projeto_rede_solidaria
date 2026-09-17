@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rede Solidária conecta voluntários e apoiadores a projetos sociais.">
+    <title>Rede Solidária | Início</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <header class="cabecalho">
+
+            <a class="marca" href="/" data-rota="/" aria-label="Rede Solidária - início">
+                <picture>
+                    <source srcset="../imagens/logo.webp" type="image/webp">
+                    <img src="../imagens/logo.png" alt="Logo da Rede Solidária">
+                </picture>
+                <span>Rede Solidária</span>
+            </a>
+
+            <button class="menu-hamburguer" type="button" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="menu-navegacao">
+                <span class="hamburguer-barra"></span>
+                <span class="hamburguer-barra"></span>
+                <span class="hamburguer-barra"></span>
+            </button>
+
+            <nav id="menu-navegacao" class="menu-navegacao" aria-label="Navegação principal">
+
+                <ul class="menu">
+
+                    <li>
+                        <a class="ativo" href="/" data-rota="/">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href=".././cadastro.html" data-rota="./cadastro.html">
+                            Seja voluntário
+                        </a>
+                    </li>
+
+                    <li class="menu-item-dropdown">
+
+                        <a href="/projetos" data-rota="/projetos" class="dropdown-toggle" aria-haspopup="true"
+                            aria-expanded="false">
+                            Projetos
+                            <span class="seta-dropdown" aria-hidden="true">▾</span>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-label="Submenu de Projetos">
+
+                            <li>
+                                <a href="/projetos" data-rota="/projetos">
+                                    Todos os projetos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/projetos" data-rota="/projetos">
+                                    Educação
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/projetos" data-rota="/projetos">
+                                    Inclusão
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/projetos" data-rota="/projetos">
+                                    Doações
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="#apoie">
+                            Apoie
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+
+
+        <div class="alerta alerta-solidaria" role="status" aria-live="polite">
+
+            <strong>Rede Solidária:</strong>
+            encontre projetos e descubra como participar.
+
+            <button class="alerta-fechar" type="button" aria-label="Fechar alerta">
+                &times;
+            </button>
+
+        </div>
+
+
+        <main class="conteudo">
+
+            <div id="app"></div>
+
+        </main>
+
+
+        <footer class="rodape">
+
+            <div>
+                <strong>Rede Solidária</strong>
+                <span>
+                    Projeto acadêmico sobre terceiro setor e acessibilidade digital.
+                </span>
+            </div>
+
+            <span>© 2026</span>
+
+        </footer>
+
+    </div>
+
+
+    <!-- Modal acessível: Como apoiar a Rede Solidária -->
+
+    <div id="modal-apoio" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-modal" hidden>
+
+        <div class="modal-overlay" data-fechar-modal>
+        </div>
+
+        <div class="modal-conteudo">
+
+            <div class="modal-cabecalho">
+
+                <h2 id="titulo-modal">
+                    Como apoiar a Rede Solidária
+                </h2>
+
+                <button type="button" class="modal-fechar" data-fechar-modal aria-label="Fechar modal">
+                    &times;
+                </button>
+
+            </div>
+
+            <div class="modal-corpo">
+
+                <p>
+                    A Rede Solidária aproxima quem deseja fazer a diferença
+                    de organizações comunitárias do terceiro setor.
+                    Você pode fazer parte dessa corrente de apoio:
+                </p>
+
+                <ul>
+
+                    <li>
+                        <strong>Voluntariado:</strong>
+                        compartilhe seu tempo, talento e dedicação
+                        em atividades formativas ou recreativas.
+                    </li>
+
+                    <li>
+                        <strong>Doações de suprimentos:</strong>
+                        colabore com cestas de alimentos, agasalhos
+                        e materiais escolares.
+                    </li>
+
+                    <li>
+                        <strong>Divulgação e conscientização:</strong>
+                        amplie o alcance dos projetos compartilhando
+                        nossas iniciativas.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="modal-rodape">
+
+                <button type="button" class="botao secundario" data-fechar-modal>
+                    Fechar
+                </button>
+
+                <a class="botao" href="./cadastro.html" data-rota="./cadastro.html">
+                    Quero ser voluntário
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
